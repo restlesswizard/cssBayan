@@ -1,0 +1,65 @@
+body {
+	background-color: bisque;
+	display: flex;
+	justify-content: center;
+}
+
+main {
+	width: 60vw;
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+}
+
+h1 {
+	height: 5vh;
+}
+
+h1, .meme {
+	border-bottom: calc(1vh/5) solid #aaa
+}
+
+.meme {
+	height: 40vh;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+img {
+	align-self: center;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+
+button > img {
+	width: 3vw;
+	height: 3vh;
+}
+
+button {
+	display: none;
+}
+
+main:hover button {
+	display: block;
+}
+
+.meme-img {
+	width: 50vw;
+	display: none;
+}
+
+.meme:hover .meme-img {
+	display: block;
+}
+
+.active {
+	display: block !important;
+}
+
+.meme__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
