@@ -51,17 +51,22 @@ img {
 }
 
 button > img {
-	width: 3vw;
-	height: 3vh;
+	width: 3em;
+	height: 3em;
+	transform: rotate(-45deg);
 }
 
 button {
 	display: none;
+
 }
 
 main:hover button {
 	display: block;
-
+	cursor: pointer;
+	all: unset;
+	/* width: 2em;
+	height: 2em; */
 }
 
 .meme {
