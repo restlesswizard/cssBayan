@@ -88,3 +88,8 @@ main:hover button {
 	justify-content: space-between;
 	align-items: flex-start;
 }
+
+span {
+	font-size: 36px;
+	border: 8px solid black;
+}
