@@ -26,8 +26,6 @@ h1, .meme {
 	flex: 1;
 }
 
-
-
 input {
 	appearance: none;
 	width: 0;
@@ -36,11 +34,14 @@ input {
 }
 
 label {
-	/* display: none; */
+	display: none;
+	cursor: pointer;
+
 }
 
-.input:checked ~ label  {
-	display: block;
+input:checked ~ label  {
+	display: flex;
+	justify-content: center;
 }
 
 img {
@@ -69,15 +70,12 @@ main:hover button {
 
 .meme-img {
 	width: 50vw;
-	display: none;
+	/* display: none; */
 }
 
-.meme:hover .meme-img {
-	display: block;
-}
-
-.active {
-	display: block !important;
+.meme:hover label {
+	display: flex;
+	justify-content: center;
 }
 
 .meme__header {
