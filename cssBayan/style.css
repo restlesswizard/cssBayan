@@ -93,3 +93,24 @@ span {
 	font-size: 36px;
 	border: 8px solid black;
 }
+
+
+/* Adaptive */
+
+@media (min-width: 426px) and (max-width: 768px) {
+	h1, h2 {
+		font-size: 1em;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+	h1, h2 {
+		font-size: calc(1rem*0.8);
+	}
+}
+
+@media (max-width: 319px) {
+	h1, h2 {
+		font-size: calc(1rem*0.7);
+	}
+}
