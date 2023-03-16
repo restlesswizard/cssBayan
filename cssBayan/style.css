@@ -1,0 +1,116 @@
+body {
+	background-color: bisque;
+	display: flex;
+	justify-content: center;
+}
+
+main {
+	width: 60vw;
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+}
+
+h1 {
+	height: 5vh;
+}
+
+h1, .meme {
+	border-bottom: calc(1vh/5) solid #aaa
+}
+
+.meme {
+	height: 40vh;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+input {
+	appearance: none;
+	width: 0;
+	height: 0;
+	position: absolute;
+}
+
+label {
+	display: none;
+	cursor: pointer;
+
+}
+
+input:checked ~ label  {
+	display: flex;
+	justify-content: center;
+}
+
+img {
+	align-self: center;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+
+button > img {
+	width: 3em;
+	height: 3em;
+	transform: rotate(-45deg);
+}
+
+button {
+	display: none;
+
+}
+
+main:hover button {
+	display: block;
+	cursor: pointer;
+	all: unset;
+	/* width: 2em;
+	height: 2em; */
+}
+
+.meme {
+	cursor: pointer;
+}
+
+.meme-img {
+	width: 50vw;
+	/* display: none; */
+}
+
+.meme:hover label {
+	display: flex;
+	justify-content: center;
+}
+
+.meme__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+span {
+	font-size: 36px;
+	border: 8px solid black;
+}
+
+
+/* Adaptive */
+
+@media (min-width: 426px) and (max-width: 768px) {
+	h1, h2 {
+		font-size: 1em;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+	h1, h2 {
+		font-size: calc(1rem*0.8);
+	}
+}
+
+@media (max-width: 319px) {
+	h1, h2 {
+		font-size: calc(1rem*0.7);
+	}
+}
